@@ -9,4 +9,4 @@
 docker build -t mt5 .
 tar -xJf home.tar.xz
 cp -R install home/
-chmod +x home/install/*.sh
+#chmod +x home/install/*.sh

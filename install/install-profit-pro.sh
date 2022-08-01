@@ -8,13 +8,11 @@
 
 URL="https://www.nelogica.com.br/produtos/bin/profitchart/Profit.exe"
 SETUP="profit.exe"
+PREFIX=".profit"
+
 wget $URL -O $SETUP
 
 # Set environment to Windows 10
-WINEPREFIX=~/.wine winecfg -v=win10
-# Start MetaTrader installer
-/usr/bin/wine /usr/lib/wine/explorer.exe
-WINEPREFIX=~/.wine wine $SETUP
-
-rm -f $SETUP
-rm ~/Desktop/*.lnk
+WINEPREFIX=~/$PREFIX winecfg -v=win10
+WINEPREFIX=~/$PREFIX wine $SETUP
+rm -f $SETUP ~/Desktop/*.lnk
