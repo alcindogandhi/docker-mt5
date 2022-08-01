@@ -6,4 +6,5 @@
 # Data:  29/07/2022
 #
 
-x11docker --home=$(pwd)/home --network=host mt5
+x11docker --clipboard --home=$(pwd)/home --network=host mt5
+
