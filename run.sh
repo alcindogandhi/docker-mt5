@@ -6,5 +6,7 @@
 # Data:  29/07/2022
 #
 
-x11docker --clipboard --home=$(pwd)/home --network=host mt5
+SCRIPT=$(readlink -f "$0")
+HOME=$(dirname "$SCRIPT")/home
 
+x11docker --desktop --clipboard --home=$HOME --network=host mt5 &

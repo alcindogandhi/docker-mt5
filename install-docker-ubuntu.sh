@@ -26,4 +26,3 @@ sudo apt-get -y --no-install-recommends install \
 sudo usermod -aG docker $USER
 
 sudo docker run hello-world
-
