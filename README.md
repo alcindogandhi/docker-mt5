@@ -2,10 +2,10 @@
 Scripts para criação de um container Docker para execução do MetaTrader 5 no Linux
 
 ## Atenção
-As plataformas de negociação que são instaladas neste projeto foram concebidas para a execução no [Microsoft Windows](https://www.microsoft.com/pt-br/windows/). A execução das plataformas no Linux via Wine não oferece a mesma estabilidade e confiabilidade da plataforma nativa, seja rodando em máquina real ou virtual. Nenhuma das desenvolvedoras das plataformas oferece suporte ou garantia para execução no Linux, muito menos este projeto. Use-o por sua própria conta e risco.
+As plataformas de negociação que são instaladas neste projeto foram concebidas para a execução no [Microsoft Windows](https://www.microsoft.com/pt-br/windows/). A execução das plataformas no [Linux](https://pt.wikipedia.org/wiki/Linux) via [Wine](https://www.winehq.org/) não oferece a mesma estabilidade e confiabilidade da plataforma nativa, seja rodando em máquina real ou virtual. Nenhuma das desenvolvedoras das plataformas oferece suporte ou garantia para execução no Linux, muito menos este projeto. Use-o por sua própria conta e risco.
 
 ## Introdução
-Este projeto contém um conjunto de scripts para criação de uma imagem [Docker](https://www.docker.com/) coma interface gráfica [LXDE](http://www.lxde.org/) por meio do [X11Docker](https://github.com/mviereck/x11docker) e o [Wine](https://www.winehq.org/) configurado, permitindo a execução no Linux de plataformas de negociação na [B3](https://www.b3.com.br/) feitas para Windows. Atualmente o projeto disponibiliza scripts para a instalação do [Metratrader 5](https://www.metatrader5.com/) e do [Profit Pro](https://www.nelogica.com.br/produtos/profit-pro).
+Este projeto contém um conjunto de scripts para criação de uma imagem [Docker](https://www.docker.com/) coma interface gráfica [LXDE](http://www.lxde.org/) por meio do [X11Docker](https://github.com/mviereck/x11docker) e o Wine configurado, permitindo a execução no Linux de plataformas de negociação na [B3](https://www.b3.com.br/) feitas para Windows. Atualmente o projeto disponibiliza scripts para a instalação do [Metratrader 5](https://www.metatrader5.com/) e do [Profit Pro](https://www.nelogica.com.br/produtos/profit-pro).
 
 ## Instalação e execução
 Para a criação das imagens, é necessária a instalação do Docker e do X11Docker no seu sistema Linux.
