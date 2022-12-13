@@ -44,5 +44,5 @@ Após a instalação, são criados ícones na área de trabalho do container par
 - Não é possivel logar na [Comunidade MQL5](https://www.mql5.com/). Com isso, não é possível baixar robôs e indicadores disponíveis na comunidade.
 
 ### - Profit Pro
-- Alguns atalhos de teclado não funcionam. Por exemplo, não é possível enviar uma ordem de venda com _Alt+Click_.
+- Para efetuar uma venda no Chart Trading, use _Ctrl+Alt_ ao invés de _Alt_ para selecionar o preço
 - Erro na atualização da plataforma por dentro do Profit. Para atualizá-lo, execute novamente o script de instalação e selecione a opção _reparar_.
