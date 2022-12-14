@@ -7,6 +7,10 @@
 #
 
 UBUNTU_CODENAME=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -d'=' -f2)
+if [ -z $UBUNTU_CODENAME ]; then
+    echo "Erro! Este sistema operacional não é baseado no Ubuntu."
+    exit
+fi
 
 sudo apt-get -y remove docker docker-engine docker.io containerd runc
 
