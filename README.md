@@ -41,7 +41,8 @@ Após a instalação, são criados ícones na área de trabalho do container par
 ## Bugs conhecidos
 
 ### - Metatrader 5
-- Não é possivel logar na [Comunidade MQL5](https://www.mql5.com/). Com isso, não é possível baixar robôs e indicadores disponíveis na comunidade.
+- Para logar na [Comunidade MQL5](https://www.mql5.com/) e poder baixar robôs e indicadores disponíveis na comunidade, utilize como login o endereço de email cadastrado ao invés do *username*.
+- O copiar e colar não funciona na tela normal de login na cominidade, mas funciona indo em *Tools → Options → Community*.
 
 ### - Profit Pro
 - Para efetuar uma venda no Chart Trading, use _Ctrl+Alt_ ao invés de _Alt_ para selecionar o preço
