@@ -10,7 +10,7 @@ SCRIPT=$(readlink -f "$0")
 SCRIPT_PATH=$(dirname "$SCRIPT")
 
 # Construindo a imagem do sistema
-docker build -t mt5 .
+docker buildx build -t mt5 .
 tar -xJf home.tar.xz
 cp -R install home/
 

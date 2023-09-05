@@ -1,6 +1,6 @@
 FROM x11docker/lxde
 
-MAINTAINER Alcindo Gandhi
+LABEL maintainer="Alcindo Gandhi"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
