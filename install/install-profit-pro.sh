@@ -9,8 +9,13 @@
 URL="https://www.nelogica.com.br/produtos/bin/profitchart/Profit.exe"
 SETUP="profit.exe"
 PREFIX=".profit"
+USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
-wget $URL -O $SETUP
+wget -U "$USER_AGENT" "$URL" -O "$SETUP"
+if [ $? -ne 0 ]; then
+    echo "Erro: não foi possível baixar o instalador do Profit Pro."
+    exit 1
+fi
 
 # Set environment to Windows 10
 WINEPREFIX=~/$PREFIX winecfg -v=win10

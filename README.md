@@ -9,9 +9,9 @@ Este projeto contém um conjunto de scripts para criação de uma imagem [Docker
 
 ## Instalação e execução
 Para a criação das imagens, é necessária a instalação do Docker e do X11Docker no seu sistema Linux.
-Em sistemas baseados no [Ubuntu](https://ubuntu.com/), a instalação pode ser feita por meio dos seguintes scripts:
+Em sistemas baseados no [Debian](https://www.debian.org/), a instalação pode ser feita por meio dos seguintes scripts:
 ```bash
-sudo sh install-docker-ubuntu.sh
+sudo sh install-docker-debian.sh
 sudo sh install-x11docker.sh
 ```
 Após instaladas as dependências, para se criar a imagem do container, basta executar o seguinte comando:
@@ -39,6 +39,9 @@ sh install-profit-pro.sh
 Após a instalação, são criados ícones na área de trabalho do container para a execução das plataformas.
 
 ## Bugs conhecidos
+
+### - LXDE
+- Os programas do ambiente gráfico apresentam problema quando se maximiza a janela do sistema na máquina host. No guest não tem problema maximizar a janela. Escolha a resolução de sua preferência no script `run.sh` alterando a variável de ambiente `DISPLAY_SIZE`.
 
 ### - Metatrader 5
 - Para logar na [Comunidade MQL5](https://www.mql5.com/) e poder baixar robôs e indicadores disponíveis na comunidade, utilize como login o endereço de email cadastrado ao invés do *username*.

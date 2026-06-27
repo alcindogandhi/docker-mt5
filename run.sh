@@ -8,5 +8,6 @@
 
 SCRIPT=$(readlink -f "$0")
 HOME=$(dirname "$SCRIPT")/home
+DISPLAY_SIZE="1760x990"
 
-x11docker --desktop --clipboard --home=$HOME --network=host mt5 &
+x11docker --desktop --clipboard --size $DISPLAY_SIZE --home=$HOME --network=host mt5 &
